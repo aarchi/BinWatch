@@ -6,7 +6,7 @@ BinWatch is a web application built using Angular and Flask that facilitates the
 ## Landing Page
 ![Application Screenshot](/images/index.PNG)
 
-## user Panel
+## User Panel
 ![Application Screenshot](/images/userView.PNG)
 
 ## Admin Login (username: admin  password: password)
