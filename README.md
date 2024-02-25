@@ -3,10 +3,19 @@
 
 BinWatch is a web application built using Angular and Flask that facilitates the management of city bins that are overflowing. Users can click pictures of overflowing bins, and municipal corporations can use the admin panel to assign tasks to workers for cleaning them.
 
+## Landing Page
 ![Application Screenshot](/images/index.PNG)
+
+## user Panel
 ![Application Screenshot](/images/userView.PNG)
+
+## Admin Login (username: admin  password: password)
 ![Application Screenshot](/images/adminLogin.PNG)
+
+## Admin Panel
 ![Application Screenshot](/images/adminView.PNG)
+
+## Workers
 ![Application Screenshot](/images/workerView.PNG)
 
 ## Table of Contents
