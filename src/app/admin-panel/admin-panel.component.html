@@ -1,0 +1,111 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Admin Panel</h3>
+        </div>
+        <div class="panel-body">
+          <div class="panel">
+            <div class="panel-heading new-tasks">
+              <h4 class="panel-title">New Tasks</h4>
+            </div>
+            <div class="panel-body">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-3" *ngFor="let report of newTasks">
+                    <div class="thumbnail">
+                      <img [src]="report.imageUrl" alt="Bin Overflow" class="img-responsive">
+                      <div class="caption">
+                        <p style="display: inline-block;">Status: {{report.status}}</p>
+                        <p style="display: inline-block; margin-left: 100px;text-align: right;" (click)="openGoogleMaps(report.location)">
+                          <img src="../../assets/map.png" alt="Map Icon" style="width: 30px; height: 30px;cursor: pointer;">
+                        </p><br>
+                        <button class="btn btn-success" (click)="assignTask(report.id)">Assign Task</button>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-heading assigned-tasks">
+              <h4 class="panel-title">Assigned Tasks</h4>
+            </div>
+            <div class="panel-body">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-3" *ngFor="let report of assignedTasks">
+                    <div class="thumbnail">
+                      <img [src]="report.imageUrl" alt="Bin Overflow" class="img-responsive">
+                      <div class="caption">
+                        <p>Status: {{report.status}} [{{report.assignedTo}}]</p>
+                        <br>
+                        <button class="btn btn-success" (click)="completeTask(report.id)">Mark for Completion</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-heading completed-tasks">
+              <h4 class="panel-title">Completed Tasks</h4>
+            </div>
+            <div class="panel-body">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-3" *ngFor="let report of completedTasks">
+                    <div class="thumbnail">
+                      <img [src]="report.imageUrl" alt="Bin Overflow" class="img-responsive">
+                      <div class="caption">
+                        <p>Status: {{report.status}}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Admin Panel</h3>
+        </div>
+        <div class="panel-body">
+          <h4>Workers:</h4>
+          <div class="row">
+            <div class="col-md-2" *ngFor="let worker of workers; let i = index;">
+              <div class="card" [style.background-color]="colors[i % colors.length]">
+                <div class="card-header">
+                  {{ worker.name }}
+                </div>
+                <div class="card-body">
+                  <p [ngStyle]="{'background-color': worker.status === 'free' ? 'green' : 'red', 'color': 'white'}">
+                    <strong>Status:</strong> {{ worker.status }}
+                  </p>
+                  
+                  <p><strong>Total Job:</strong> {{ worker.totalTasksCompleted }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Your existing task panels -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

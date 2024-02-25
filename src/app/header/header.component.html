@@ -1,0 +1,13 @@
+<header class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header" style="margin-top: 10px; margin-bottom: 10px;">
+      <img src="assets/logo.png" class="img-responsive" style="width: 150px;cursor: pointer;" routerLink="/">
+      <!-- <a class="navbar-brand" >BinWatch</a> -->
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li *ngIf="!isAuthenticated"><a routerLink="/user">User</a></li>
+      <li *ngIf="!isAuthenticated"><a routerLink="/admin">Admin</a></li>
+      <li *ngIf="isAuthenticated"><a (click)="logout()"><span style="cursor: pointer;">Logout</span></a></li>
+    </ul>
+  </div>
+</header>

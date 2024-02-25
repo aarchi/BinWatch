@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "Alice",
+        "totalTasksCompleted": 0,
+        "status": "free"
+    },
+    {
+        "id": 2,
+        "name": "Bob",
+        "totalTasksCompleted": 0,
+        "status": "free"
+    },
+    {
+        "id": 3,
+        "name": "Charlie",
+        "totalTasksCompleted": 0,
+        "status": "free"
+    },
+    {
+        "id": 4,
+        "name": "David",
+        "totalTasksCompleted": 0,
+        "status": "free"
+    },
+    {
+        "id": 5,
+        "name": "Eve",
+        "totalTasksCompleted": 0,
+        "status": "free"
+    },
+    {
+        "id": 6,
+        "name": "Frank",
+        "totalTasksCompleted": 0,
+        "status": "free"
+    },
+    {
+        "id": 7,
+        "name": "Grace",
+        "totalTasksCompleted": 0,
+        "status": "free"
+    },
+    {
+        "id": 8,
+        "name": "Hank",
+        "totalTasksCompleted": 0,
+        "status": "free"
+    },
+    {
+        "id": 9,
+        "name": "Ivy",
+        "totalTasksCompleted": 0,
+        "status": "free"
+    },
+    {
+        "id": 10,
+        "name": "Jack",
+        "totalTasksCompleted": 0,
+        "status": "free"
+    },
+    {
+        "id": 11,
+        "name": "Kelly",
+        "totalTasksCompleted": 1,
+        "status": "free"
+    },
+    {
+        "id": 12,
+        "name": "Liam",
+        "totalTasksCompleted": 0,
+        "status": "free"
+    }
+]

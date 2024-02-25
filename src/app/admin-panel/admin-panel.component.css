@@ -1,0 +1,71 @@
+.panel-default {
+  border-color: #4CAF50;
+  border: solid 0px;
+}
+
+.panel-heading {
+}
+
+.panel-body {
+  padding: 15px;
+}
+
+.img-responsive{
+  width: 250px;
+  height: 150px;
+}
+.report-image {
+  
+
+}
+.panel-heading.new-tasks {
+  background-color: whitesmoke;
+}
+
+.panel-title{
+  font-weight: bold;
+}
+
+
+.panel-heading.assigned-tasks {
+  background-color: whitesmoke;
+}
+
+.panel-heading.completed-tasks {
+  background-color: whitesmoke;
+}
+.card {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.card-header {
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  font-weight: bold; /* Make the font bold */
+  color: #333; /* Darken the font color */
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card-body p {
+  margin-bottom: 5px;
+  color: #666; /* Darken the font color */
+}
+
+.card-red {
+  background-color: #ffcccc;
+}
+
+.card-blue {
+  background-color: #cce5ff;
+}
+
+.card-green {
+  background-color: #e5ffcc;
+}
+
