@@ -1,27 +1,78 @@
+
 # BinWatch
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.8.
+BinWatch is a web application built using Angular and Flask that facilitates the management of city bins that are overflowing. Users can click pictures of overflowing bins, and municipal corporations can use the admin panel to assign tasks to workers for cleaning them.
 
-## Development server
+![Application Screenshot](/images/index.PNG)
+![Application Screenshot](/images/userView.PNG)
+![Application Screenshot](/images/adminLogin.PNG)
+![Application Screenshot](/images/adminView.PNG)
+![Application Screenshot](/images/workerView.PNG)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Table of Contents
+1. [Features](#features)
+2. [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
+3. [Usage](#usage)
+4. [Configuration](#configuration)
 
-## Code scaffolding
+## 1. Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Upload Pictures:** Users can click pictures of overflowing bins and upload them to the application.
+- **Admin Pane:** Municipal corporations can use the admin panel to view the uploaded pictures and assign tasks to workers
+- **Task Assignment:** Workers can be assigned tasks to clean the overflowing bins.
+- **Response Formatting:** Users can track the status of their uploaded pictures and see when the bins are cleaned.
 
-## Build
+## 2. Getting Started
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Follow these instructions to get the project up and running on your local machine.
 
-## Running unit tests
+### 2.1 Prerequisites
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+To run this project, you need to have the following software installed:
 
-## Running end-to-end tests
+- **Node.js:** Ensure you have Node.js installed. You can download it from the [official website](https://nodejs.org/).
+- **Angular CLI:** Install the Angular CLI globally using npm:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
+npm install -g @angular/cli
+```
 
-## Further help
+- **Python:** Ensure you have python installed. You can download it from the [official website](https://www.python.org/ftp/python/3.12.1/python-3.12.1-amd64.exe).
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### 2.2 Installation
+
+1. clone the project on your local machine.
+2. Navigate to the project directory:
+
+```bash
+cd your-repo
+```
+
+3. Install the project dependencies:
+
+```bash
+npm install
+```
+
+4. Install the Python dependencies:
+```bash
+pip install Flask
+pip install flask_cors
+
+To run python server go to bin-watch\src\app
+python app.py
+it will start on http://localhost:4201/
+```
+
+## 3. Usage
+
+1. Start the Angular development server:
+
+```bash
+ng serve
+```
+
+2. The app will be accessible at http://localhost:4200/ by default.
+3. Open the app in your web browser.
